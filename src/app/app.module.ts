@@ -3,22 +3,22 @@ import { BrowserModule } from '@angular/platform-browser';
 import { RouterModule } from '@angular/router';
 
 import { AppComponent } from './app.component';
-import { HomeComponent } from './home/home.component';
 import { CocktailsWithAlcoholComponent } from './cocktails-with-alcohol/cocktails-with-alcohol.component';
+import { CocktailsWithoutAlcoholComponent } from './cocktails-without-alcohol/cocktails-without-alcohol.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    HomeComponent,
-    CocktailsWithAlcoholComponent
+    CocktailsWithAlcoholComponent,
+    CocktailsWithoutAlcoholComponent
   ],
   imports: [
-    BrowserModule,
-    RouterModule.forRoot([
-      { path: 'home', component: HomeComponent },
-      { path: '', redirectTo: 'home', pathMatch: 'full' },
-      { path: '**', redirectTo: 'home', pathMatch: 'full' }
-    ])
+    BrowserModule//,
+    //RouterModule.forRoot([
+      //{ path: 'home', component: HomeComponent },
+      //{ path: '', redirectTo: 'home', pathMatch: 'full' },
+      //{ path: '**', redirectTo: 'home', pathMatch: 'full' }
+    //])
   ],
   providers: [],
   bootstrap: [AppComponent]
