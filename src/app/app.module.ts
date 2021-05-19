@@ -4,11 +4,13 @@ import { RouterModule } from '@angular/router';
 
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
+import { CocktailsWithAlcoholComponent } from './cocktails-with-alcohol/cocktails-with-alcohol.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    HomeComponent
+    HomeComponent,
+    CocktailsWithAlcoholComponent
   ],
   imports: [
     BrowserModule,
